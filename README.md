@@ -52,7 +52,7 @@ This project consists of the following components:
 <div style="display:flex; align-items:center;">
 <img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200"/><br>
 <strong>Michel Ange Uwizeye (Team Lead)</strong><br>
-[Repository](link_to_michel_repo)
+<a href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
 </div>
 <div style="display:flex; align-items:center;">
 <img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200"/><br>
