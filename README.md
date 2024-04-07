@@ -49,22 +49,22 @@ This project consists of the following components:
 ## Team Members
 
 <div style="display:flex; justify-content:space-around;">
-<div style="display:flex; flex-direction:column; align-items:center;">
+<div style="display:flex; align-items:center;">
 <img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200"/><br>
 <strong>Michel Ange Uwizeye (Team Lead)</strong><br>
 [Repository](link_to_michel_repo)
 </div>
-<div style="display:flex; flex-direction:column; align-items:center;">
+<div style="display:flex; align-items:center;">
 <img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200"/><br>
 <strong>Aphrodis Uwineza</strong><br>
 [Repository](link_to_aphrodis_repo)
 </div>
-<div style="display:flex; flex-direction:column; align-items:center;">
+<div style="display:flex; align-items:center;">
 <img src="img/profile.png" alt="Jacqueline Tuyisenge" width="200"/><br>
 <strong>Jacqueline Tuyisenge</strong><br>
 [Repository](link_to_jacqueline_repo)
 </div>
-<div style="display:flex; flex-direction:column; align-items:center;">
+<div style="display:flex; align-items:center;">
 <img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="200"/><br>
 <strong>Bonheur Kwizera</strong><br>
 [Repository](link_to_bonheur_repo)
