@@ -16,7 +16,7 @@ This project consists of the following components:
 ## Project Setup
 
 1. **Clone the Repository**: 
-   ```http
+   ```ssh
    git clone [repository_link]
 
 
