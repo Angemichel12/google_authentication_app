@@ -22,7 +22,7 @@ This project consists of the following components:
 
 ## Team Members
 
-<img src="aphrodis_image_link" alt="Aphrodis Uwineza" width="100"/> Aphrodis Uwineza's Repository
+<img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="100"/> Aphrodis Uwineza's Repository
 
 <img src="jacqueline_image_link" alt="Jacqueline Tuyisenge" width="100"/> Jacqueline Tuyisenge's Repository
 
