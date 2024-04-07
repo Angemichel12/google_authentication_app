@@ -21,11 +21,10 @@ This project consists of the following components:
 
 
 ## Team Members
+<img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="500"/> : <strong>Team Lead</strong> <br>Michel Ange Uwizeye's Repository<br>
 
-<img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="100"/> <br><br>Aphrodis Uwineza's Repository
+<img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="500"/> <br>Aphrodis Uwineza's Repository<br>
 
-<img src="jacqueline_image_link" alt="Jacqueline Tuyisenge" width="100"/> <br><br>Jacqueline Tuyisenge's Repository
+<img src="img/profile.png" alt="Jacqueline Tuyisenge" width="500"/> <br>Jacqueline Tuyisenge's Repository<br>
 
-<img src="michelange_image_link" alt="Michel Ange Uwizeye" width="100"/> <br><br>Michel Ange Uwizeye's Repository
-
-<img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="100"/><br><br> Bonheur Kwizera's Repository
+<img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="500"/><br> Bonheur Kwizera's Repository<br>
