@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node-dev ./index.ts",
+    "start": "ts-node-dev --require dotenv/config ./index.ts",
     "migration": "npx sequelize-cli db:migrate",
     "migration:undo": "npx sequelize db:migrate:undo:all",
     "seed": "npm run migration:undo && npm run migration && npx sequelize db:seed:undo:all && npx sequelize db:seed:all"
