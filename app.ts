@@ -1,12 +1,10 @@
-import express from 'express'
-import { Request, Response } from 'express';
+import express from "express";
+import { Request, Response } from "express";
+import router from "./src/routes/authRoutes";
+import passport from "passport";
 const app = express();
+require("./src/authentication/auth");
 app.use(express.json());
-app.use("/",(req:Request,res:Response) => {
-    return res.status(200).json({
-        status: 200,
-        message: "Welcome to our user apis"
-    })
-})
+app.use("/", router);
 
-export default app
+export default app;
