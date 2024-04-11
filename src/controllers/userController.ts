@@ -44,10 +44,8 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
     try {
       let results: any;
         const { id } = req.params;
-        // console.log("ID:", id);
         
         const user = await UserModel.findOne({ where: { id } });
-        // console.log("User:", user);
         
         if (!user) {
           console.log("User not found");
@@ -58,8 +56,7 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
         if(req.file){
            results = await cloudinary.uploader.upload(req.file.path);   
         }
-
-        console.log("Old data:", { firstName, lastName, profile });
+        
         
         const userDataToUpdate = {
             firstName: req.body.firstName || firstName,
@@ -68,10 +65,9 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
         };
         
         const updatedUser = await user.update(userDataToUpdate);
-        
+
         return res.status(200).json({ message: "User updated", data: updatedUser });
     } catch (error) {
-        console.error("Error:", error);
         return res.status(500).json({ message: "Internal Server Error", error: error });
     }
 }
