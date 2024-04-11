@@ -4,7 +4,7 @@ Welcome to our Team Work Preparation Small Project README! This project focuses 
 
 ## Tags
 
-`<API>` `<Node.js>` `<Express.js>` `<TypeScript>` `<PostgreSQL>` `<Sequelize>` `<Google Authentication>` `<Profile Settings>` `<Email Notification>` `<nodemailer>` `<cloudinary>` `<multer>` `<passport>` `<passport-google-oauth20>` `<sequelize-cli>` `<dotenv>` `<cloudinary>`
+`<API>` `<Node.js>` `<Express.js>` `<TypeScript>` `<PostgreSQL>` `<Sequelize>` `<Google Authentication>` `<Profile Settings>` `<Email Notification>` `<Google API>` `<OAuth>` `<Google Cloud>` `<nodemailer>` `<passport>` `<passport-google-oauth20>` `<passport-oauth2>`
 
 ## Project Overview
 
@@ -19,7 +19,7 @@ This project consists of the following components:
 1. **Clone the Repository**:
 
    ```ssh
-   git clone [repository_link]
+   git clone [https://github.com/Angemichel12/google_authentication_app.git]
    ```
 
 2. **Install Dependencies**:
@@ -41,25 +41,25 @@ This project consists of the following components:
 
 ## Team Members
 
-<div style="display:flex; justify-content:space-around;">
-<div style="display:flex; align-items:center;">
-<img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200"/><br>
-<strong>Michel Ange Uwizeye (Team Lead)</strong><br>
-<a style="line-d" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
-</div>
-<div style="display:flex; align-items:center;">
-<img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200"/><br>
-<strong>Aphrodis Uwineza</strong><br>
-[Repository](link_to_aphrodis_repo)
-</div>
-<div style="display:flex; align-items:center;">
-<img src="img/profile.png" alt="Jacqueline Tuyisenge" width="200"/><br>
-<strong>Jacqueline Tuyisenge</strong><br>
-[Repository](link_to_jacqueline_repo)
-</div>
-<div style="display:flex; align-items:center;">
-<img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="200"/><br>
-<strong>Bonheur Kwizera</strong><br>
-[Repository](link_to_bonheur_repo)
-</div>
+<div style="display: flex; justify-content: space-around;">
+   <div style="display: flex; align-items: center;">
+      <img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200" style="border-radius: 10px;"/><br>
+      <strong>Michel Ange Uwizeye (Team Lead)</strong><br>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+   </div>
+   <div style="display: flex; align-items: center;">
+      <img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200" style="border-radius: 10px;"/><br>
+      <strong>Aphrodis Uwineza</strong><br>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+   </div>
+   <div style="display: flex; align-items: center;">
+      <img src="img/profile.png" alt="Jacqueline Tuyisenge" width="200" style="border-radius: 10px;"/><br>
+      <strong>Jacqueline Tuyisenge</strong><br>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+   </div>
+   <div style="display: flex; align-items: center;">
+      <img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="200" style="border-radius: 10px;"/><br>
+      <strong>Bonheur Kwizera</strong><br>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+   </div>
 </div>

@@ -57,37 +57,6 @@ const getSingleUserFromDataBase = async (req: Request, res: Response) => {
 
 // a function to update user data from database
 
-<<<<<<< HEAD
-const updateUserFromDataBase = async(req: Request, res: Response)=>{
-    try {
-      let results: any;
-        const { id } = req.params;
-        
-        const user = await UserModel.findOne({ where: { id } });
-        
-        if (!user) {
-          console.log("User not found");
-          return res.status(404).json({ message: "No user found!", status: "Not Found" });
-        }
-        
-        const { firstName, lastName, profile } = user.dataValues;
-        if(req.file){
-           results = await cloudinary.uploader.upload(req.file.path);   
-        }
-        
-        
-        const userDataToUpdate = {
-            firstName: req.body.firstName || firstName,
-            lastName: req.body.lastName || lastName,
-            profile: results.secure_url
-        };
-        
-        const updatedUser = await user.update(userDataToUpdate);
-
-        return res.status(200).json({ message: "User updated", data: updatedUser });
-    } catch (error) {
-        return res.status(500).json({ message: "Internal Server Error", error: error });
-=======
 const updateUserFromDataBase = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
@@ -101,7 +70,6 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
       return res
         .status(404)
         .json({ message: "No user found!", status: "Not Found" });
->>>>>>> f23e03e (added user notification)
     }
 
     // get user's email form darabase
@@ -140,7 +108,7 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
           <li>Last Name: ${userDataToUpdate.lastName}</li>
         </ul>
         <p>Profile:</p>
-        <img src="${userDataToUpdate.profile}" alt="profile image" styles="width: 150px; height: 200px; border-radius: 10px;"/>
+        <img src="${userDataToUpdate.profile}" alt="profile image" style="width: 150px; height: 200px; border-radius: 10px;"/>
       `
     };
     
