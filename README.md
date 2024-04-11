@@ -4,7 +4,7 @@ Welcome to our Team Work Preparation Small Project README! This project focuses 
 
 ## Tags
 
-`<API>` `<Node.js>` `<Express.js>` `<TypeScript>` `<PostgreSQL>` `<Sequelize>` `<Google Authentication>` `<Profile Settings>` `<Email Notification>`
+`<API>` `<Node.js>` `<Express.js>` `<TypeScript>` `<PostgreSQL>` `<Sequelize>` `<Google Authentication>` `<Profile Settings>` `<Email Notification>` `<nodemailer>` `<cloudinary>` `<multer>` `<passport>` `<passport-google-oauth20>` `<sequelize-cli>` `<dotenv>` `<cloudinary>`
 
 ## Project Overview
 
@@ -34,14 +34,7 @@ This project consists of the following components:
    npm start
    ```
 
-4. **Test Server**:
-
-   ```bash
-   npm test
-
-   ```
-
-5. **Install sequelize**:
+4. **Install sequelize**:
    ```bash
    npm install sequelize
    ```
@@ -52,7 +45,7 @@ This project consists of the following components:
 <div style="display:flex; align-items:center;">
 <img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200"/><br>
 <strong>Michel Ange Uwizeye (Team Lead)</strong><br>
-<a href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+<a style="line-d" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
 </div>
 <div style="display:flex; align-items:center;">
 <img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200"/><br>
