@@ -45,21 +45,21 @@ This project consists of the following components:
    <div style="display: flex; align-items: center;">
       <img src="img/michel.jpeg" alt="Michel Ange Uwizeye" width="200" style="border-radius: 10px;"/><br>
       <strong>Michel Ange Uwizeye (Team Lead)</strong><br>
-      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12">Github</a>
    </div>
    <div style="display: flex; align-items: center;">
-      <img src="img/Aphro.jpeg" alt="Aphrodis Uwineza" width="200" style="border-radius: 10px;"/><br>
+      <img src="img/aphro.jpg" alt="Aphrodis Uwineza" width="200" style="border-radius: 10px;"/><br>
       <strong>Aphrodis Uwineza</strong><br>
-      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/GarrixA">Github</a>
    </div>
    <div style="display: flex; align-items: center;">
       <img src="img/profile.png" alt="Jacqueline Tuyisenge" width="200" style="border-radius: 10px;"/><br>
       <strong>Jacqueline Tuyisenge</strong><br>
-      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/JacquelineTuyisenge">Github</a>
    </div>
    <div style="display: flex; align-items: center;">
-      <img src="img/Bon.jpeg" alt="Bonheur Kwizera" width="200" style="border-radius: 10px;"/><br>
+      <img src="img/bon.jpeg" alt="Bonheur Kwizera" width="200" style="border-radius: 10px;"/><br>
       <strong>Bonheur Kwizera</strong><br>
-      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Repository</a>
+      <a style="line-d; text-decoration: none; color: green;" href="https://github.com/Angemichel12/google_authentication_app">Github</a>
    </div>
 </div>
