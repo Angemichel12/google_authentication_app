@@ -91,17 +91,20 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
 const updateUserFromDataBase = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    
+    // console.log("ID:", id);
+
     const user = await UserModel.findOne({ where: { id } });
+    // console.log("User:", user);
 
     if (!user) {
+      console.log("User not found");
       return res
         .status(404)
         .json({ message: "No user found!", status: "Not Found" });
 >>>>>>> f23e03e (added user notification)
     }
 
-    // get user's email form database
+    // get user's email form darabase
     const userEmail = user.dataValues.email;
 
     const { firstName, lastName, profile } = user.dataValues;
@@ -110,8 +113,10 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
       const results = await cloudinary.uploader.upload(req.file.path);
       await user.update({ profile: results.secure_url });
       updatedProfile = results.secure_url;
-     
+      // console.log("profile updated", updatedProfile);
     }
+
+    console.log("Old data:", { firstName, lastName, profile });
 
     const userDataToUpdate = {
       firstName: req.body.firstName || firstName,
@@ -120,13 +125,13 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
     };
 
     const updatedUser = await user.update(userDataToUpdate);
-   
+    // console.log("Updated data:", userDataToUpdate);
 
     //composing the email
     const mailOptions = {
       from: process.env.EMAIL,
-      to: userEmail, 
-      subject: "Profile Updated successfully!",
+      to: userEmail, // receiver of email
+      subject: "Profile Updated",
       html: `
         <p>Hello ${userDataToUpdate.firstName}, your profile has been updated successfully!.</p>
         <p>Here are your profile details:</p>
@@ -135,11 +140,13 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
           <li>Last Name: ${userDataToUpdate.lastName}</li>
         </ul>
         <p>Profile:</p>
-        <img src="${userDataToUpdate.profile}" alt="profile image" style="width: 150px; height: 200px; border-radius: 10px;"/>
+        <img src="${userDataToUpdate.profile}" alt="profile image" styles="width: 150px; height: 200px; border-radius: 10px;"/>
       `
     };
     
+
     //send email
+
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error("Error sending email:", error);
@@ -149,7 +156,6 @@ const updateUserFromDataBase = async (req: Request, res: Response) => {
     });
 
     return res.status(200).json({ message: "User updated", data: updatedUser });
-
   } catch (error) {
     console.error("Error:", error);
     return res
