@@ -42,6 +42,7 @@ const getSingleUserFromDataBase = async (req: Request, res: Response) => {
 
 const updateUserFromDataBase = async(req: Request, res: Response)=>{
     try {
+      let results: any;
         const { id } = req.params;
         // console.log("ID:", id);
         
@@ -49,18 +50,13 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
         // console.log("User:", user);
         
         if (!user) {
-            console.log("User not found");
-            return res.status(404).json({ message: "No user found!", status: "Not Found" });
+          console.log("User not found");
+          return res.status(404).json({ message: "No user found!", status: "Not Found" });
         }
-
+        
         const { firstName, lastName, profile } = user.dataValues;
-        let updatedProfile = profile;
         if(req.file){
-            const results = await cloudinary.uploader.upload(req.file.path);
-            await user.update({profile: results.secure_url});
-            updatedProfile = results.secure_url
-            // console.log("profile updated", updatedProfile);
-            
+           results = await cloudinary.uploader.upload(req.file.path);   
         }
 
         console.log("Old data:", { firstName, lastName, profile });
@@ -68,12 +64,11 @@ const updateUserFromDataBase = async(req: Request, res: Response)=>{
         const userDataToUpdate = {
             firstName: req.body.firstName || firstName,
             lastName: req.body.lastName || lastName,
-            profile: updatedProfile
+            profile: results.secure_url
         };
         
         const updatedUser = await user.update(userDataToUpdate);
-        // console.log("Updated data:", userDataToUpdate);
-
+        
         return res.status(200).json({ message: "User updated", data: updatedUser });
     } catch (error) {
         console.error("Error:", error);
